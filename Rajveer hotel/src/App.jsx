@@ -1,5 +1,11 @@
 import { Navbar } from "./components/Navbar";
+import { Navslideshow } from "./components/Navslideshow";
 
 export default function App() {
-  return <Navbar />;
+  return (
+    <div>
+      <Navbar />
+      <Navslideshow />
+    </div>
+  );
 }
