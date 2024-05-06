@@ -1,4 +1,4 @@
-import { Fade } from "react-slideshow-image";
+import { Zoom } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import image6 from "../assets/image6.jpg";
 import image8 from "../assets/image8.jpg";
@@ -26,9 +26,10 @@ const fadeImages = [
 export const Navslideshow = () => {
   return (
     <div className="slide-container">
-      <Fade
+      <Zoom
         autoplay={true} // Enable autoplay
-        duration={2000} // Duration between slides in milliseconds (e.g., 3000 = 3 seconds)
+        duration={3000}
+        scale={0.2} // Duration between slides in milliseconds (e.g., 3000 = 3 seconds)
       >
         {fadeImages.map((fadeImage, index) => (
           <div key={index}>
@@ -47,7 +48,7 @@ export const Navslideshow = () => {
             </div>
           </div>
         ))}
-      </Fade>
+      </Zoom>
     </div>
   );
 };
