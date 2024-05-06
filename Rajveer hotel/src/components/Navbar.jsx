@@ -41,6 +41,11 @@ export const Navbar = () => {
             </a>
           </li>
           <li>
+            <a href="#contact" className="text-black hover:text-gray-200">
+              Rooms
+            </a>
+          </li>
+          <li>
             <a href="#rooms" className="text-black hover:text-gray-200">
               Photo Gallery
             </a>
