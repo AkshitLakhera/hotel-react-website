@@ -32,7 +32,7 @@ export const ThreeDCard = ({ title, imageUrl, price }) => {
           >
             {price}
           </a>
-          <button className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
+          <button className="px-4 py-3 rounded-xl bg-yellow-500  text-white text-xs font-bold">
             Book Now
           </button>
         </div>

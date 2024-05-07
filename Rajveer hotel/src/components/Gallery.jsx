@@ -1,105 +1,100 @@
-import React from "react";
-import {
-  StackedCarousel,
-  ResponsiveContainer,
-} from "react-stacked-center-carousel";
-import Fab from "@material-ui/core/Fab";
-import ArrowBackIcon from "@material-ui/icons/ArrowBack";
-import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
+import { Fade } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
+import image10 from "../assets/image10.jpg";
+import image7 from "../assets/image7.jpg";
+import image18 from "../assets/image18.jpg";
+import image16 from "../assets/image16.jpg";
+import image14 from "../assets/image14.jpg";
+import image15 from "../assets/image15.jpg";
+import image17 from "../assets/image17.jpg";
+import image12 from "../assets/image12.jpg";
+import image9 from "../assets/image9.jpg";
+import image2 from "../assets/image2.jpg";
+import image21 from "../assets/image21.jpg";
+import image22 from "../assets/image22.jpg";
+import image23 from "../assets/image23.jpg";
+import image24 from "../assets/image24.jpg";
+import image25 from "../assets/image25.jpg";
+import "../custom styles/Gallery.css";
 
-export const data = [
+const fadeImages = [
   {
-    cover: "https://images6.alphacoders.com/679/thumb-1920-679459.jpg",
-    title: "Interstaller",
+    url: image18,
   },
   {
-    cover: "https://images2.alphacoders.com/851/thumb-1920-85182.jpg",
-    title: "Inception",
+    url: image16,
   },
   {
-    cover: "https://images6.alphacoders.com/875/thumb-1920-875570.jpg",
-    title: "Blade Runner 2049",
+    url: image14,
   },
   {
-    cover: "https://images6.alphacoders.com/114/thumb-1920-1141749.jpg",
-    title: "Icon man 3",
+    url: image15,
   },
   {
-    cover: "https://images3.alphacoders.com/948/thumb-1920-948864.jpg",
-    title: "Venom",
+    url: image17,
   },
   {
-    cover: "https://images2.alphacoders.com/631/thumb-1920-631095.jpg",
-    title: "Steins Gate",
+    url: image12,
   },
   {
-    cover: "https://images4.alphacoders.com/665/thumb-1920-665242.png",
-    title: "One Punch Man",
+    url: image10,
   },
   {
-    cover: "https://images2.alphacoders.com/738/thumb-1920-738176.png",
-    title: "A Silent Voice",
+    url: image9,
   },
   {
-    cover: "https://images8.alphacoders.com/100/thumb-1920-1005531.jpg",
-    title: "Demon Slayer",
+    url: image7,
   },
   {
-    cover: "https://images2.alphacoders.com/582/thumb-1920-582804.png",
-    title: "Attack On Titan",
+    url: image2,
+  },
+  {
+    url: image21,
+  },
+  {
+    url: image22,
+  },
+  {
+    url: image23,
+  },
+  {
+    url: image24,
+  },
+  {
+    url: image25,
   },
 ];
 
-export const Gallery = (props) => {
-  const ref = React.useRef();
+export const Gallery = () => {
   return (
-    <div style={{ width: "100%", position: "relative" }}>
-      <ResponsiveContainer
-        carouselRef={ref}
-        render={(parentWidth, carouselRef) => {
-          // If you want to use a ref to call the method of StackedCarousel, you cannot set the ref directly on the carousel component
-          // This is because ResponsiveContainer will not render the carousel before its parent's width is determined
-          // parentWidth is determined after your parent component mounts. Thus if you set the ref directly it will not work since the carousel is not rendered
-          // Thus you need to pass your ref object to the ResponsiveContainer as the carouselRef prop and in your render function you will receive this ref object
-          let currentVisibleSlide = 5;
-          if (parentWidth <= 1440) currentVisibleSlide = 3;
-          if (parentWidth <= 1080) currentVisibleSlide = 1;
-          return (
-            <StackedCarousel
-              ref={carouselRef}
-              slideComponent={Card}
-              slideWidth={parentWidth < 800 ? parentWidth - 40 : 750}
-              carouselWidth={parentWidth}
-              data={data}
-              currentVisibleSlide={currentVisibleSlide}
-              maxVisibleSlide={5}
-              useGrabCursor
-            />
-          );
-        }}
-      />
-      <>
-        <Fab
-          style={{ position: "absolute", top: "40%", left: 10, zIndex: 10 }}
-          size="small"
-          color="primary"
-          onClick={() => {
-            ref.current?.goBack();
-          }}
+    <div>
+      <div className="heading flex justify-center m-9 mb-6">
+        <h1 className="text-5xl font-extrabold text-slate-600">Our Gallery</h1>
+      </div>
+      <div className="slide-container">
+        <Fade
+          autoplay={true} // Enable autoplay
+          duration={1000}
+          scale={0.9} // Duration between slides in milliseconds (e.g., 3000 = 3 seconds)
         >
-          <ArrowBackIcon />
-        </Fab>
-        <Fab
-          style={{ position: "absolute", top: "40%", right: 10, zIndex: 10 }}
-          size="small"
-          color="primary"
-          onClick={() => {
-            ref.current?.goNext(6);
-          }}
-        >
-          <ArrowForwardIcon />
-        </Fab>
-      </>
+          {fadeImages.map((fadeImage, index) => (
+            <div key={index} className="image-wrapper flex justify-center ">
+              <img
+                className=" max-w-160 max-h-100 mb-40"
+                alt={fadeImage.caption}
+                src={fadeImage.url}
+              />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className=" p-6 rounded-lg text-white text-center">
+                  <h2 className="text-4xl md:text-6xl lg:text-8xl font-serif">
+                    {fadeImage.caption}
+                  </h2>
+                </div>
+              </div>
+            </div>
+          ))}
+        </Fade>
+      </div>
     </div>
   );
 };

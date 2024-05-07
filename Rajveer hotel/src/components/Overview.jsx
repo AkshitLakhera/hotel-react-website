@@ -1,4 +1,4 @@
-import image11 from "../assets/imga11.jpg";
+import image18 from "../assets/image18.jpg";
 
 export const Overview = () => {
   return (
@@ -6,7 +6,7 @@ export const Overview = () => {
       {/* Content Section */}
       <div className="about_content w-full lg:w-1/2 max-w-4xl p-4 rounded-lg">
         <div
-          className="sec_title relative mb-6 text-left leading-10 font-bold text-#0f3a4a tracking-wide"
+          className="sec_title text-slate-600 relative mb-6 text-left leading-10 font-bold text-#0f3a4a tracking-wide"
           style={{ fontSize: 40 }}
         >
           Overview
@@ -48,7 +48,7 @@ export const Overview = () => {
       <div className="overiew_imag w-full lg:w-1/2 max-w-xl p-4">
         <img
           className="w-full h-full rounded-lg hover:scale-105 transition-transform duration-500 ease-in-out loop"
-          src={image11}
+          src={image18}
           alt="Hotel"
         />{" "}
         {/* Adjust the size of the image here */}

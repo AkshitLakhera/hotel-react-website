@@ -1,0 +1,5 @@
+.image-wrapper {
+  max-width: 80vw; /* Adjust as needed */
+  max-height: 80vh; /* Adjust as needed */
+  min-width: 100%;
+}
