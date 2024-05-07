@@ -21,6 +21,7 @@
     "framer-motion": "^11.1.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.0",
     "react-stacked-center-carousel": "^1.0.14",
     "swiper": "^11.1.1",
     "tailwind-merge": "^2.3.0"

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -31,14 +32,14 @@ export const Navbar = () => {
         </div>
         <ul className="flex flex-wrap items-center justify-end space-x-4 md:space-x-8">
           <li>
-            <a href="#about" className="text-black hover:text-gray-200  ">
+            <Link to="/" className="text-black hover:text-gray-200">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#about" className="text-black hover:text-gray-200">
-              About Us
-            </a>
+            <Link to="/about" className="text-black hover:text-gray-200">
+              About us
+            </Link>
           </li>
           <li>
             <a href="#contact" className="text-black hover:text-gray-200">
@@ -46,9 +47,9 @@ export const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="#rooms" className="text-black hover:text-gray-200">
+            <Link to="/photos" className="text-black hover:text-gray-200">
               Photo Gallery
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#contact" className="text-black hover:text-gray-200">
