@@ -52,9 +52,14 @@ export const Navbar = () => {
             </Link>
           </li>
           <li>
-            <a href="#contact" className="text-black hover:text-gray-200">
+            <Link to="/partyhall" className="text-black hover:text-gray-200">
+              Party Hall
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" className="text-black hover:text-gray-200">
               Contact Us
-            </a>
+            </Link>
           </li>
         </ul>
         <div className="flex items-center">

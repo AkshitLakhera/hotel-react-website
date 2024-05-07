@@ -28,7 +28,7 @@ export const ThreeDCard = ({ title, imageUrl, price, description }) => {
           <a
             href="https://twitter.com/mannupaaji"
             target="_blank"
-            className="px-4 py-2 rounded-xl text-3xl font-bold dark:text-white font-serif"
+            className="px-4 py-2 rounded-xl text-3xl font-bold text-slate-600 dark:text-white font-serif"
           >
             {price}
           </a>
