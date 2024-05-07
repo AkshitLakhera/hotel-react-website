@@ -1,6 +1,7 @@
 import { ThreeDCard } from "./Threedcard";
 import image1 from "../assets/image1.jpg";
 import image6 from "../assets/image6.jpg";
+import image11 from "../assets/image11.jpg";
 
 export const Roomcomp = () => {
   return (
@@ -20,6 +21,12 @@ export const Roomcomp = () => {
           // description="Hover over this card to unleash the power of CSS perspective"
           imageUrl={image6}
           price="2500 per night"
+        />
+        <ThreeDCard
+          title="Our party hall"
+          // description="Hover over this card to unleash the power of CSS perspective"
+          imageUrl={image11}
+          price="Contact for pricing"
         />
       </div>
     </div>

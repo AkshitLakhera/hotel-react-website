@@ -42,9 +42,9 @@ export const Navbar = () => {
             </Link>
           </li>
           <li>
-            <a href="#contact" className="text-black hover:text-gray-200">
+            <Link to="/rooms" className="text-black hover:text-gray-200">
               Rooms
-            </a>
+            </Link>
           </li>
           <li>
             <Link to="/photos" className="text-black hover:text-gray-200">
