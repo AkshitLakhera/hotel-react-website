@@ -4,6 +4,7 @@ import { About } from "./pages/About";
 import { PhotoGallery } from "./pages/Photogallery";
 import { Rooms } from "./pages/Rooms";
 import { Partyhall } from "./pages/Partyhall";
+import { Contact } from "./pages/Contact";
 export default function App() {
   return (
     <div className="bg-slate-50">
@@ -15,6 +16,7 @@ export default function App() {
             <Route path="/photos" element={<PhotoGallery />} />
             <Route path="/rooms" element={<Rooms />} />
             <Route path="/partyhall" element={<Partyhall />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </BrowserRouter>
       </>

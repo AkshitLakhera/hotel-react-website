@@ -26,7 +26,7 @@ export const Partyhall = () => {
         <div className="about_section container mx-auto px-4 py-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-slate-600">
-              Our Rooms
+              Party Hall
             </h2>
             <p className="text-lg leading-relaxed mb-6">
               The most awaited days of your life deserve a grand celebration,
@@ -44,10 +44,9 @@ export const Partyhall = () => {
             </p>
             <div className="flex justify-center gap-3">
               <ThreeDCard
-                title="Standard Room Non-Ac"
-                description="Standard Rooms at Hotel Rajveer is the most occupied set of rooms that remains in demand throughout the year. While visiting haridwar, try staying in one of these Standerd Rooms and experience the world class facilities at reasonable tariff. We wish you a happy and relaxing stay during your spiritual quest."
+                title="Our party hall"
                 imageUrl={image11}
-                price="2000 per night"
+                price="Contact for pricing"
               />
             </div>
           </div>

@@ -9,7 +9,7 @@ export const Roomcomp = () => {
       <div className="heading flex justify-center">
         <h1 className="text-5xl font-extrabold text-slate-600">Our Rooms</h1>
       </div>
-      <div className="flex justify-center gap-32">
+      <div className="flex justify-center flex-wrap gap-4 md:gap-32 md:flex-nowrap">
         <ThreeDCard
           title="Standard Room Non-Ac"
           // description="Hover over this card to unleash the power of CSS perspective"
@@ -17,7 +17,7 @@ export const Roomcomp = () => {
           price="2000 per night"
         />
         <ThreeDCard
-          title="Delux Room Ac"
+          title="Deluxe Room Ac"
           // description="Hover over this card to unleash the power of CSS perspective"
           imageUrl={image6}
           price="2500 per night"

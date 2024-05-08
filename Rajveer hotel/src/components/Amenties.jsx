@@ -12,14 +12,14 @@ export const Amenities = () => {
   return (
     <div className="text-center  p-10">
       <h2 className="text-5xl font-bold mb-20 text-slate-600">Amenities</h2>
-      <div className="flex justify-around items-center mb-4">
+      <div className="flex justify-around items-center mb-4 flex-wrap md:flex-nowrap">
         <div className="hover:bg-yellow-100 rounded-lg p-4">
           <FontAwesomeIcon
             icon={faHotel}
             style={{ color: "#FFD43B" }}
             className="text-4xl mb-2"
           />
-          <p className="font-bold">Hotel</p>
+          <p className="font-bold">Homestay</p>
         </div>
         <div className="hover:bg-yellow-100 rounded-lg p-4">
           <FontAwesomeIcon
@@ -27,7 +27,7 @@ export const Amenities = () => {
             style={{ color: "#FFD43B" }}
             className="text-4xl mb-2"
           />
-          <p className="font-bold">Food</p>
+          <p className="font-bold">Resturant</p>
         </div>
         <div className="hover:bg-yellow-100 rounded-lg p-4">
           <FontAwesomeIcon
@@ -43,7 +43,7 @@ export const Amenities = () => {
             style={{ color: "#FFD43B" }}
             className="text-4xl mb-2"
           />
-          <p className="font-bold">Travel Desk</p>
+          <p className="font-bold">Parking</p>
         </div>
         <div className="hover:bg-yellow-100 rounded-lg p-4">
           <FontAwesomeIcon
