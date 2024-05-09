@@ -22,7 +22,7 @@ export const Footerbox = () => {
           <div className=" mr-10 mb-6 md:mb-0 md:w-1/5   ">
             <a
               href="https://flowbite.com/"
-              className="flex items-center justify-center md:justify-start"
+              className="  md:flex md:items-center md:justify-center"
             >
               <span className=" text-white hover:text-yellow-400 self-center text-2xl font-semibold whitespace-nowrap ">
                 Rajveer Homestay
@@ -35,7 +35,7 @@ export const Footerbox = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-6 md:w-4/5">
-            <div className="text-center md:text-left">
+            <div className="md:text-center  ">
               <h2 className="mb-6 text-md font-semibold  text-white hover:text-yellow-400  uppercase">
                 Quick Links
               </h2>
@@ -66,7 +66,7 @@ export const Footerbox = () => {
                 </li>
               </ul>
             </div>
-            <div className="text-center md:text-left">
+            <div className="md:text-center">
               <h2 className="mb-6 text-md font-semibold  text-white hover:text-yellow-400 uppercase">
                 Contact us
               </h2>
@@ -92,7 +92,7 @@ export const Footerbox = () => {
                 </li>
               </ul>
             </div>
-            <div className="text-center md:text-left">
+            <div className="md:text-center">
               <h2 className="mb-6 text-md font-semibold  text-white hover:text-yellow-400 uppercase">
                 Location
               </h2>
