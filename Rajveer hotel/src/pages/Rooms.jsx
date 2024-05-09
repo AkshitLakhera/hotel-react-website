@@ -45,7 +45,7 @@ export const Rooms = () => {
               hotel for its impeccable bundle of services it delivers and the
               world-class facilities that it provides.
             </p>
-            <div className="md:flex md:justify-center gap-3 flex-wrap">
+            <div className="md:flex md:justify-center gap-3 flex-wrap ">
               <ThreeDCard
                 title="Standard Room Non-Ac"
                 description="Standard Rooms at Hotel Rajveer is the most occupied set of rooms that remains in demand throughout the year. While visiting haridwar, try staying in one of these Standerd Rooms and experience the world class facilities at reasonable tariff. We wish you a happy and relaxing stay during your spiritual quest."
