@@ -69,7 +69,9 @@ export const Gallery = () => {
   return (
     <div>
       <div className="heading flex justify-center m-9 mb-6">
-        <h1 className="text-5xl font-extrabold text-slate-600">Our Gallery</h1>
+        <h1 className="text-5xl font-extrabold text-slate-600 font-heading">
+          Our Gallery
+        </h1>
       </div>
       <div className="slide-container">
         <Fade

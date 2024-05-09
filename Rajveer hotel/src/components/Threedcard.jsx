@@ -6,7 +6,7 @@ export const ThreeDCard = ({ title, imageUrl, price, description }) => {
       <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
-          className="text-2xl font-bold text-neutral-600 dark:text-white"
+          className="text-2xl font-bold text-neutral-600 dark:text-white font-heading"
         >
           {title}
         </CardItem>
@@ -20,7 +20,7 @@ export const ThreeDCard = ({ title, imageUrl, price, description }) => {
         <CardItem
           as="p"
           translateZ="60"
-          className="text-neutral-500 text-xl max-w-sm mt-4 dark:text-neutral-500"
+          className="text-neutral-500 text-xl max-w-sm mt-4 dark:text-neutral-500 fpnt-sans"
         >
           {description}
         </CardItem>
@@ -28,11 +28,11 @@ export const ThreeDCard = ({ title, imageUrl, price, description }) => {
           <a
             href="https://twitter.com/mannupaaji"
             target="_blank"
-            className="px-4 py-2 rounded-xl text-3xl font-bold text-slate-600 dark:text-white font-serif"
+            className="px-4 py-2 rounded-xl text-3xl font-bold text-slate-600 dark:text-white font-sans"
           >
             {price}
           </a>
-          <button className="px-4 py-3 rounded-xl bg-yellow-500  text-white text-xs font-bold">
+          <button className="px-4 py-3 rounded-xl bg-yellow-500  text-white text-xs font-bold font-sans">
             Book Now
           </button>
         </div>

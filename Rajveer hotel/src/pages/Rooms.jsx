@@ -4,10 +4,12 @@ import image1 from "../assets/image1.jpg";
 import image6 from "../assets/image6.jpg";
 import { ThreeDCard } from "../components/Threedcard";
 import { Footerbox } from "../components/Footer";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 export const Rooms = () => {
   return (
     <div>
+      <FloatingWhatsApp />
       <Navbar />
       <div className="Aboutrooms">
         <div className="relative">

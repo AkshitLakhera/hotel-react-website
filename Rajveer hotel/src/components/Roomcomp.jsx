@@ -7,7 +7,9 @@ export const Roomcomp = () => {
   return (
     <div>
       <div className="heading flex justify-center">
-        <h1 className="text-5xl font-extrabold text-slate-600">Our Rooms</h1>
+        <h1 className="text-5xl font-extrabold text-slate-600 font-heading">
+          Our Rooms
+        </h1>
       </div>
       <div className="flex justify-center flex-wrap gap-4 md:gap-32 md:flex-nowrap">
         <ThreeDCard

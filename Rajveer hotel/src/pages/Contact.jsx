@@ -9,10 +9,18 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import BookingForm from "../components/BookingForm";
 import { Footerbox } from "../components/Footer";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 export const Contact = () => {
   return (
     <div>
+      <div className="relative top-0 left-0">
+        <FloatingWhatsApp
+          phoneNumber={"9758584612"}
+          accountName={"Rajveer HomeStay"}
+          avatar={image18}
+        />
+      </div>
       <Navbar />
       <div className="relative">
         <div

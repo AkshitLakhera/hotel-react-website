@@ -3,10 +3,18 @@ import image18 from "../assets/image8.jpg";
 import image11 from "../assets/image11.jpg";
 import { ThreeDCard } from "../components/Threedcard";
 import { Footerbox } from "../components/Footer";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 export const Partyhall = () => {
   return (
     <div>
+      <div className="relative top-0 left-0">
+        <FloatingWhatsApp
+          phoneNumber={"9758584612"}
+          accountName={"Rajveer HomeStay"}
+          avatar={image18}
+        />
+      </div>
       <Navbar />
       <div>
         <div className="relative">

@@ -43,12 +43,12 @@ const BookingForm = () => {
 
   return (
     <div className="bg-white p-6 rounded-lg shadow-md hover:bg-yellow-100 transition duration-300 ease-in-out">
-      <h2 className="text-lg font-semibold text-gray-800 mb-4">
+      <h2 className="text-lg font-semibold text-gray-800 mb-4 font-heading">
         Book Your Stay
       </h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
-          <label className="block text-gray-800">Name:</label>
+          <label className="block text-gray-800 font-sans">Name:</label>
           <input
             type="text"
             name="name"
@@ -60,7 +60,7 @@ const BookingForm = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-800">Check In:</label>
+          <label className="block text-gray-800 font-sans">Check In:</label>
           <input
             type="date"
             name="checkIn"
@@ -72,7 +72,7 @@ const BookingForm = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-800">Check Out:</label>
+          <label className="block text-gray-800 font-sans">Check Out:</label>
           <input
             type="date"
             name="checkOut"
@@ -84,7 +84,7 @@ const BookingForm = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-800">Phone Number:</label>
+          <label className="block text-gray-800 font-sans">Phone Number:</label>
           <input
             type="tel"
             name="phoneNumber"
@@ -96,7 +96,7 @@ const BookingForm = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-800">Note:</label>
+          <label className="block text-gray-800 font-sans">Note:</label>
           <textarea
             name="note"
             placeholder="Note"
@@ -106,7 +106,9 @@ const BookingForm = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-800">Number of Guests:</label>
+          <label className="block text-gray-800 font-sans">
+            Number of Guests:
+          </label>
           <input
             type="number"
             name="numberOfGuests"
@@ -118,7 +120,9 @@ const BookingForm = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-800">Number of Rooms:</label>
+          <label className="block text-gray-800 font-sans">
+            Number of Rooms:
+          </label>
           <input
             type="number"
             name="numberOfRooms"
@@ -132,7 +136,7 @@ const BookingForm = () => {
         <div className="mt-4">
           <button
             type="submit"
-            className="bg-yellow-400 px-6 py-3 focus:outline-none text-white rounded-lg"
+            className="bg-yellow-400 font-heading px-6 py-3 focus:outline-none text-white rounded-lg"
             onClick={handleSubmit}
           >
             Submit

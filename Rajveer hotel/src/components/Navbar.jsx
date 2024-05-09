@@ -38,40 +38,56 @@ export const Navbar = () => {
       <nav className="nav_container container md:mx-auto md:flex md:flex-wrap md:items-center md:justify-between hidden sm:block">
         <div className="flex items-center">
           <h1
-            className="text-black font-extrabold text-3xl cursor-pointer"
+            className="text-black font-extrabold  cursor-pointer"
             onClick={() => navigate("/")}
           >
-            Hotel Name
+            <span className="text-5xl font-bold text-yellow-500">R</span>
+            <span className="text-3xl">ajveer Homestay</span>
           </h1>
         </div>
         <ul className="flex flex-wrap items-center justify-end space-x-4 md:space-x-8">
           <li>
-            <Link to="/" className="text-black hover:text-gray-200">
+            <Link to="/" className="text-black font-bold hover:text-yellow-200">
               Home
             </Link>
           </li>
           <li>
-            <Link to="/about" className="text-black hover:text-gray-200">
+            <Link
+              to="/about"
+              className="text-black font-bold hover:text-yellow-200"
+            >
               About us
             </Link>
           </li>
           <li>
-            <Link to="/rooms" className="text-black hover:text-gray-200">
+            <Link
+              to="/rooms"
+              className="text-black font-bold hover:text-yellow-200"
+            >
               Rooms
             </Link>
           </li>
           <li>
-            <Link to="/photos" className="text-black hover:text-gray-200">
+            <Link
+              to="/photos"
+              className="text-black font-bold hover:text-yellow-200"
+            >
               Photo Gallery
             </Link>
           </li>
           <li>
-            <Link to="/partyhall" className="text-black hover:text-gray-200">
+            <Link
+              to="/partyhall"
+              className="text-black font-bold hover:text-yellow-200"
+            >
               Party Hall
             </Link>
           </li>
           <li>
-            <Link to="/contact" className="text-black hover:text-gray-200">
+            <Link
+              to="/contact"
+              className="text-black font-bold hover:text-yellow-200"
+            >
               Contact Us
             </Link>
           </li>
@@ -80,7 +96,7 @@ export const Navbar = () => {
           <a
             href="#"
             onClick={() => navigate("/contact#bookingForm")}
-            className=" text-gray-900 text-center font-semibold bg-yellow-500 px-8 py-3 rounded-full hover:bg-yellow-600 transition duration-300"
+            className=" text-gray-900 text-center font-semibold bg-yellow-500 px-5 py-2 rounded-full hover:bg-yellow-600 transition duration-300"
           >
             Book now
           </a>
@@ -91,10 +107,11 @@ export const Navbar = () => {
       <div className="sm:hidden">
         <div className="flex justify-between items-center">
           <h1
-            className="text-black font-extrabold text-3xl cursor-pointer"
+            className="text-black font-extrabold  cursor-pointer"
             onClick={() => navigate("/")}
           >
-            Hotel Name
+            <span className="text-5xl font-bold text-yellow-500">R</span>
+            <span className="text-3xl">ajveer Homestay</span>
           </h1>
           <button className="hamburger_menu" onClick={handleMenuToggle}>
             {/* Hamburger menu icon */}

@@ -8,8 +8,8 @@ import image7 from "../assets/image7.jpg";
 const fadeImages = [
   {
     url: image6,
-    caption: "Welcome to Hotel Rajveer !",
-  },  
+    caption: "Welcome to Rajveer Homestay !",
+  },
   {
     url: image7,
     caption: "Quality Holidays with us",
@@ -40,7 +40,7 @@ export const Navslideshow = () => {
             />
             <div className="absolute inset-0 flex items-center justify-center">
               <div className=" p-6 rounded-lg text-white text-center">
-                <h2 className="text-4xl md:text-6xl lg:text-8xl font-serif">
+                <h2 className="text-4xl md:text-6xl lg:text-8xl font-heading">
                   {fadeImage.caption}
                 </h2>
                 <p className="mt-2">{fadeImage.text}</p>

@@ -20,15 +20,18 @@ export const Footerbox = () => {
       <div className="mx-auto max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex  flex-col md:flex-row items-center">
           <div className=" mr-10 mb-6 md:mb-0 md:w-1/5   ">
-            <a
-              href="https://flowbite.com/"
-              className="  md:flex md:items-center md:justify-center"
-            >
+            <a href="" className="  md:flex md:items-center md:justify-center">
               <span className=" text-white hover:text-yellow-400 self-center text-2xl font-semibold whitespace-nowrap ">
-                Rajveer Homestay
+                <h1
+                  className="text-black font-extrabold  cursor-pointer"
+                  onClick={() => navigate("/")}
+                >
+                  <span className="text-5xl font-bold text-yellow-500">R</span>
+                  <span className="text-3xl text-white">ajveer Homestay</span>
+                </h1>
               </span>
             </a>
-            <p className=" text-white hover:text-gray-300 mt-2 max-h-24 overflow-hidden md:max-h-none md:mt-4 sm-text-center">
+            <p className="font-sans text-white hover:text-gray-300 mt-2 max-h-24 overflow-hidden md:max-h-none md:mt-4 sm-text-center">
               Rajveer homestay stands tall amidst the best hotels in Rishikesh.
               we are offering an amalgam of warm hospitality and comfort for the
               guests
@@ -36,14 +39,14 @@ export const Footerbox = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-6 md:w-4/5">
             <div className="md:text-center  ">
-              <h2 className="mb-6 text-md font-semibold  text-white hover:text-yellow-400  uppercase">
+              <h2 className="font-heading mb-6 text-md font-semibold  text-white hover:text-yellow-400  uppercase">
                 Quick Links
               </h2>
               <ul className=" text-white font-medium cursor-pointer">
                 <li>
                   <a
                     onClick={() => navigate("/")}
-                    className="hover:text-yellow-400"
+                    className="hover:text-yellow-400 font-sans"
                   >
                     Home
                   </a>
@@ -51,7 +54,7 @@ export const Footerbox = () => {
                 <li>
                   <a
                     onClick={() => navigate("/rooms")}
-                    className="hover:text-yellow-400"
+                    className="hover:text-yellow-400 font-sans"
                   >
                     Rooms
                   </a>
@@ -59,7 +62,7 @@ export const Footerbox = () => {
                 <li>
                   <a
                     onClick={() => navigate("/contact")}
-                    className="hover:text-yellow-400"
+                    className="hover:text-yellow-400 font-heading"
                   >
                     Contact
                   </a>
@@ -72,20 +75,29 @@ export const Footerbox = () => {
               </h2>
               <ul className=" text-white hover:text-gray-300 font-medium cursor-pointer">
                 <li>
-                  <FontAwesomeIcon icon={faMapMarker} className="mr-2" />
+                  <FontAwesomeIcon
+                    icon={faMapMarker}
+                    className="mr-2 font-sans"
+                  />
                   <span className="hover:text-yellow-400">
                     {" "}
                     123 Main St, Haridwar, India
                   </span>
                 </li>
                 <li>
-                  <FontAwesomeIcon icon={faPhoneAlt} className="mr-2" />
+                  <FontAwesomeIcon
+                    icon={faPhoneAlt}
+                    className="mr-2 font-sans"
+                  />
                   <span className="hover:text-yellow-400">
                     +91 123 456 7890
                   </span>
                 </li>
                 <li>
-                  <FontAwesomeIcon icon={faEnvelopeOpen} className="mr-2" />
+                  <FontAwesomeIcon
+                    icon={faEnvelopeOpen}
+                    className="mr-2 font-sans"
+                  />
                   <span className="hover:text-yellow-400">
                     info@example.com
                   </span>
@@ -93,7 +105,7 @@ export const Footerbox = () => {
               </ul>
             </div>
             <div className="md:text-center">
-              <h2 className="mb-6 text-md font-semibold  text-white hover:text-yellow-400 uppercase">
+              <h2 className="mb-6 text-md font-semibold  text-white hover:text-yellow-400 uppercase font-heading">
                 Location
               </h2>
               <iframe
@@ -111,7 +123,7 @@ export const Footerbox = () => {
         <div className="flex flex-col gap-4 items-center sm:flex-row sm:justify-center sm:items-center">
           <span className="text-sm  mr-10 text-white hover:text-gray-300 mb-4 sm:mb-0">
             © {new Date().getFullYear()}{" "}
-            <a href="https://flowbite.com/" className="hover:underline mr-6">
+            <a href="" className="hover:underline mr-6 font-heading">
               copyright™
             </a>
             All Rights Reserved.

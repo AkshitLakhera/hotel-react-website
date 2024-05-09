@@ -16,10 +16,18 @@ import image23 from "../assets/image23.jpg";
 import image24 from "../assets/image24.jpg";
 import image25 from "../assets/image25.jpg";
 import "../custom styles/ImageCollection.css";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 export const PhotoGallery = () => {
   return (
     <div>
+      <div className="relative top-0 left-0">
+        <FloatingWhatsApp
+          phoneNumber={"9758584612"}
+          accountName={"Rajveer HomeStay"}
+          avatar={image18}
+        />
+      </div>
       <Navbar />
       <div>
         <div className="relative">

@@ -11,7 +11,9 @@ import {
 export const Amenities = () => {
   return (
     <div className="text-center  p-10">
-      <h2 className="text-5xl font-bold mb-20 text-slate-600">Amenities</h2>
+      <h2 className="text-5xl font-bold mb-20 text-slate-600 font-heading">
+        Amenities
+      </h2>
       <div className="flex justify-around items-center mb-4 flex-wrap md:flex-nowrap">
         <div className="hover:bg-yellow-100 rounded-lg p-4">
           <FontAwesomeIcon
@@ -19,7 +21,7 @@ export const Amenities = () => {
             style={{ color: "#FFD43B" }}
             className="text-4xl mb-2"
           />
-          <p className="font-bold">Homestay</p>
+          <p className="font-bold font-sans">Homestay</p>
         </div>
         <div className="hover:bg-yellow-100 rounded-lg p-4">
           <FontAwesomeIcon
@@ -27,7 +29,7 @@ export const Amenities = () => {
             style={{ color: "#FFD43B" }}
             className="text-4xl mb-2"
           />
-          <p className="font-bold">Resturant</p>
+          <p className="font-bold font-sans">Resturant</p>
         </div>
         <div className="hover:bg-yellow-100 rounded-lg p-4">
           <FontAwesomeIcon
@@ -35,7 +37,7 @@ export const Amenities = () => {
             style={{ color: "#FFD43B" }}
             className="text-4xl mb-2"
           />
-          <p className="font-bold">24hr Service</p>
+          <p className="font-bold font-sans">24hr Service</p>
         </div>
         <div className="hover:bg-yellow-100 rounded-lg p-4">
           <FontAwesomeIcon
@@ -43,7 +45,7 @@ export const Amenities = () => {
             style={{ color: "#FFD43B" }}
             className="text-4xl mb-2"
           />
-          <p className="font-bold">Parking</p>
+          <p className="font-bold font-sans">Parking</p>
         </div>
         <div className="hover:bg-yellow-100 rounded-lg p-4">
           <FontAwesomeIcon
@@ -51,7 +53,7 @@ export const Amenities = () => {
             style={{ color: "#FFD43B" }}
             className="text-4xl mb-2"
           />
-          <p className="font-bold">Visa Payment</p>
+          <p className="font-bold font-sans">Visa Payment</p>
         </div>
         <div className="hover:bg-yellow-100 rounded-lg p-4">
           <FontAwesomeIcon
@@ -59,7 +61,7 @@ export const Amenities = () => {
             style={{ color: "#FFD43B" }}
             className="text-4xl mb-2"
           />
-          <p className="font-bold">Best Price</p>
+          <p className="font-bold font-sans">Best Price</p>
         </div>
       </div>
     </div>

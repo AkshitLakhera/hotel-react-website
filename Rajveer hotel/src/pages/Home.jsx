@@ -1,4 +1,5 @@
 import { Navbar } from "../components/Navbar";
+import { TopStrip } from "../components/Iconfloating";
 import { Navslideshow } from "../components/Navslideshow";
 import { Overview } from "../components/Overview";
 import { Roomcomp } from "../components/Roomcomp";
@@ -10,13 +11,14 @@ import image18 from "../assets/image18.jpg";
 export default function Home() {
   return (
     <div className="bg-slate-50">
-      <div className="relative top-9 left-9">
+      <div className="relative top-0 left-0">
         <FloatingWhatsApp
           phoneNumber={"9758584612"}
           accountName={"Rajveer HomeStay"}
           avatar={image18}
         />
       </div>
+      <TopStrip />
       <Navbar />
       <Navslideshow />
       <Overview />
