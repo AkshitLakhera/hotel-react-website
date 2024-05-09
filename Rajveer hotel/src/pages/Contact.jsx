@@ -28,7 +28,7 @@ export const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center space-x-4 mt-16 gap-10 mb-16">
+      <div className="flex justify-center items-center flex-wrap space-x-4 mt-16 gap-10 mb-16">
         <div className="flex items-center text-yellow-500 text-lg md:text-2xl lg:text-3xl">
           <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />
           <span>123 Main St, Haridwar, India</span>

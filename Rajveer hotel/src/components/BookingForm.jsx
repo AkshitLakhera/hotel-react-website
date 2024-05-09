@@ -42,7 +42,7 @@ const BookingForm = () => {
   };
 
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md hover:bg-yellow-300 transition duration-300 ease-in-out">
+    <div className="bg-white p-6 rounded-lg shadow-md hover:bg-yellow-100 transition duration-300 ease-in-out">
       <h2 className="text-lg font-semibold text-gray-800 mb-4">
         Book Your Stay
       </h2>
