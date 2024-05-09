@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import "../custom styles/Navbar.css";
 
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [showNavLinks, setShowNavLinks] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate("");
 
   useEffect(() => {
@@ -23,8 +24,8 @@ export const Navbar = () => {
     };
   }, []);
 
-  const toggleNavLinks = () => {
-    setShowNavLinks(!showNavLinks);
+  const handleMenuToggle = () => {
+    setMenuOpen(!menuOpen);
   };
 
   return (
@@ -33,7 +34,8 @@ export const Navbar = () => {
         scrolled ? "opacity-90" : ""
       }`}
     >
-      <nav className="container mx-auto flex flex-wrap items-center justify-between">
+      {/* Navbar for large screen */}
+      <nav className="nav_container container md:mx-auto md:flex md:flex-wrap md:items-center md:justify-between hidden sm:block">
         <div className="flex items-center">
           <h1
             className="text-black font-extrabold text-3xl cursor-pointer"
@@ -42,93 +44,34 @@ export const Navbar = () => {
             Hotel Name
           </h1>
         </div>
-        {/* Toggle button for small screens */}
-        <div className="block md:hidden">
-          <button
-            onClick={toggleNavLinks}
-            className="text-gray-900 focus:outline-none"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              {showNavLinks ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16m-7 6h7"
-                />
-              )}
-            </svg>
-          </button>
-        </div>
-        {/* Navigation links */}
-        <ul
-          className={`${
-            showNavLinks ? "block" : "hidden"
-          } md:flex md:flex-wrap md:items-center md:justify-end space-x-4 md:space-x-8`}
-        >
+        <ul className="flex flex-wrap items-center justify-end space-x-4 md:space-x-8">
           <li>
-            <Link
-              to="/"
-              onClick={toggleNavLinks}
-              className="text-black hover:text-gray-200"
-            >
+            <Link to="/" className="text-black hover:text-gray-200">
               Home
             </Link>
           </li>
           <li>
-            <Link
-              to="/about"
-              onClick={toggleNavLinks}
-              className="text-black hover:text-gray-200"
-            >
+            <Link to="/about" className="text-black hover:text-gray-200">
               About us
             </Link>
           </li>
           <li>
-            <Link
-              to="/rooms"
-              onClick={toggleNavLinks}
-              className="text-black hover:text-gray-200"
-            >
+            <Link to="/rooms" className="text-black hover:text-gray-200">
               Rooms
             </Link>
           </li>
           <li>
-            <Link
-              to="/photos"
-              onClick={toggleNavLinks}
-              className="text-black hover:text-gray-200"
-            >
+            <Link to="/photos" className="text-black hover:text-gray-200">
               Photo Gallery
             </Link>
           </li>
           <li>
-            <Link
-              to="/partyhall"
-              onClick={toggleNavLinks}
-              className="text-black hover:text-gray-200"
-            >
+            <Link to="/partyhall" className="text-black hover:text-gray-200">
               Party Hall
             </Link>
           </li>
           <li>
-            <Link
-              to="/contact"
-              onClick={toggleNavLinks}
-              className="text-black hover:text-gray-200"
-            >
+            <Link to="/contact" className="text-black hover:text-gray-200">
               Contact Us
             </Link>
           </li>
@@ -143,6 +86,82 @@ export const Navbar = () => {
           </a>
         </div>
       </nav>
+
+      {/* Navbar for small screen */}
+      <div className="sm:hidden">
+        <div className="flex justify-between items-center">
+          <h1
+            className="text-black font-extrabold text-3xl cursor-pointer"
+            onClick={() => navigate("/")}
+          >
+            Hotel Name
+          </h1>
+          <button className="hamburger_menu" onClick={handleMenuToggle}>
+            {/* Hamburger menu icon */}
+          </button>
+        </div>
+        {menuOpen && (
+          <ul className="nav_links">
+            <li>
+              <Link
+                to="/"
+                className="text-black hover:border hover:bg-yellow-400 p-3  rounded-lg"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/about"
+                className="text-black hover:border hover:bg-yellow-400 p-3  rounded-lg"
+              >
+                About us
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/rooms"
+                className="text-black hover:border hover:bg-yellow-400 p-3  rounded-lg"
+              >
+                Rooms
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/photos"
+                className="text-black hover:border hover:bg-yellow-400 p-3  rounded-lg"
+              >
+                Photo Gallery
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/partyhall"
+                className="text-black hover:border hover:bg-yellow-400 p-3  rounded-lg"
+              >
+                Party Hall
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/contact"
+                className="text-black hover:border hover:bg-yellow-400 p-3  rounded-lg"
+              >
+                Contact Us
+              </Link>
+            </li>
+            <li>
+              <a
+                href="#"
+                onClick={() => navigate("/contact#bookingForm")}
+                className=" text-gray-900 text-center font-semibold bg-yellow-500 px-8 py-3 rounded-full hover:bg-yellow-600 transition duration-300"
+              >
+                Book now
+              </a>
+            </li>
+          </ul>
+        )}
+      </div>
     </header>
   );
 };

@@ -1,0 +1,49 @@
+@media (max-width: 980px) {
+  .nav_container {
+    display: none;
+  }
+  .nav_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 2rem;
+  }
+  .nav_links li:hover {
+    color: yellow;
+    cursor: pointer;
+  }
+  .nav_flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    align-items: center;
+  }
+  /* hamburger icon */
+  .hamburger_menu {
+    width: 20px;
+    height: 3px;
+    background-color: yellow;
+    position: relative;
+  }
+
+  .hamburger_menu::before,
+  .hamburger_menu::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: yellow;
+    position: absolute;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger_menu::before {
+    top: -6px;
+  }
+
+  .hamburger_menu::after {
+    bottom: -6px;
+  }
+}
