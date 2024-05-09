@@ -24,7 +24,7 @@
   .hamburger_menu {
     width: 20px;
     height: 3px;
-    background-color: yellow;
+    background-color: black;
     position: relative;
   }
 
@@ -34,7 +34,7 @@
     display: block;
     width: 20px;
     height: 3px;
-    background-color: yellow;
+    background-color: black;
     position: absolute;
     transition: all 0.3s ease;
   }

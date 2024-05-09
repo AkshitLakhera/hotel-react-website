@@ -153,7 +153,7 @@ export const Navbar = () => {
             <li>
               <a
                 href="#"
-                onClick={() => navigate("/contact#bookingForm")}
+                onClick={() => navigate("/contact")}
                 className=" text-gray-900 text-center font-semibold bg-yellow-500 px-8 py-3 rounded-full hover:bg-yellow-600 transition duration-300"
               >
                 Book now

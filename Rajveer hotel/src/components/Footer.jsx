@@ -29,9 +29,9 @@ export const Footerbox = () => {
               </span>
             </a>
             <p className=" text-white hover:text-gray-300 mt-2 max-h-24 overflow-hidden md:max-h-none md:mt-4 sm-text-center">
-              Hotel Kangan stands tall amidst the best hotels in Rishikesh.
-              Hotel Kangan offering an amalgam of warm hospitality and comfort
-              for the guests
+              Rajveer homestay stands tall amidst the best hotels in Rishikesh.
+              we are offering an amalgam of warm hospitality and comfort for the
+              guests
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-6 md:w-4/5">
