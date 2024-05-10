@@ -21,9 +21,14 @@ const BookingForm = () => {
     console.log("form submitted");
 
     emailjs
-      .send("your_service_id", "your_template_id", formData, "your_user_id")
+      .send(
+        "service_p4pk6lw",
+        "template_syhd6ms",
+        formData,
+        "j_67iLg8GF0tPtOLA"
+      )
       .then(
-        (response) => {
+        () => {
           alert("Booking submitted successfully!");
           setFormData({
             name: "",
