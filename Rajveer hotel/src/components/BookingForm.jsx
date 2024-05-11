@@ -22,10 +22,10 @@ const BookingForm = () => {
 
     emailjs
       .send(
-        "service_p4pk6lw",
-        "template_syhd6ms",
-        formData,
-        "j_67iLg8GF0tPtOLA"
+        // "service_p4pk6lw",
+        // "template_syhd6ms",
+        formData
+        // "j_67iLg8GF0tPtOLA"
       )
       .then(
         () => {
