@@ -19,7 +19,7 @@ const BookingForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("form submitted");
-
+    // credentials
     emailjs
       .send(
         // "service_p4pk6lw",
